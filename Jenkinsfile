@@ -5,6 +5,8 @@ pipeline {
             steps {
                 bat 'docker build -t registration:v1 .'
             }
+
+            
         }
         stage('Push to Docker Hub') {
             steps {
